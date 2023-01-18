@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <script src="script.js" defer></script>
+    <title>DevList - To Do</title>
+</head>
+
+<body>
+    <div class="divh3">
+        <h3>Dev List</h3>
+    </div>
+
+    <div class="text">
+        <input type="text" id="inputText" placeholder="Adicione Algo...">
+
+        <button id="btnAdd">Adicionar</button>
+        <button id="btnOrdenar">Ordenar</button>
+        <button id="btnExcluir">Excluir</button>
+        <a href="duvidas.html">o que é o DevLists?</a>
+
+        <ul id="Lista">
+
+        </ul>
+
+    </div>
+    <div id="divLast">
+        <p class="p1">Projeto criado por <a href="https://www.github.com/devlucaspro/">Dev Lucas Ribeiro.</a></p>
+        <p class="p2">Meu <a href="https://www.linkedin.com/in/devlucaspro">Github</a></p>
+    </div>
+
+    <script>
+
+        // << Usei um pouco de DOM e manipulação com Array. >>
+
+
+        // *** ESTUDOS SOBRE ARRAY, IGNORE SE QUISER. ***
+
+
+        // --------- Aula Array 001
+
+        //Array escrevendo -> Array()
+        // var listTarefas = Array()
+        // var listTarefas = [];
+
+        // listTarefas[1] = 'Banana';
+        // listTarefas[2] = 'Maçã';
+        // listTarefas['x'] = 'Morango';
+        // listTarefas[4] = 'Uva';
+
+        //Desse jeito sem informar o index de posicao o js mesmo informa começando do ZERO.
+        // var listFrutas = Array('banana', 'maca', 'morango', 'uva');
+
+        // var ListFruits = ['banana', 'maca', 'morango', 'uva']
+
+        // console.log(ListFruits[1]);
+
+        // console.log(listFrutas)
+
+        // console.log(ListFruits.length);
+
+        // --------- Aula Array 002
+
+        //
+
+
+        // --------- Aula Array 003
+
+        // ---- Metodos de inclusão e exclusão de elementos
+
+        // var ListaFrutas = Array()
+
+        // ListaFrutas[0] = 'Banana';
+        // ListaFrutas[1] = 'Maçã';
+
+        //---incluir elemento no final array - push
+        // ListaFrutas.push("uva");
+
+        //---incluir elemento no inicio do array - unshift
+        // ListaFrutas.unshift("uva");
+
+        //---excluir elemento do inicio do array
+        // ListaFrutas.shift()
+
+        //---excluir elemento do fim do array
+        // ListaFrutas.pop()
+
+        // console.log(ListaFrutas);
+
+        //Array com Elementos html dentro
+        /*
+        var Teste = [
+            "<h1>Hello World</h1>",
+            "<h2>Hi People!</h2>"
+        ];
+        */
+
+        // document.write(Teste[1]);
+
+
+        // ------- Aula Array 004
+
+        // Metodos de pesquisa dentro de Array
+
+        /*
+        var listFrutas = Array()
+
+        listFrutas[0] = 'Banana';
+        listFrutas[1] = 'Maça';
+        listFrutas[2] = 'Morango';
+        listFrutas[3] = 'Uva';
+
+        //-- variavel para ajudar na Resolução
+        var auxiliar = listFrutas.indexOf("Banana");
+
+        //--- Com indexOf e Posiçao do Elemento, Pesquisa Case Sensitive
+        if(auxiliar === -1){
+            console.log("Elemento não existe");
+        }else{
+            console.log("elemento existe e esta na posição " + auxiliar);
+        }
+        */
+
+
+        // ------- Aula Array 005
+
+        // --- Ordenação de elementos
+
+        /*
+        var ListaFrutas = [];
+
+        ListaFrutas[0] = 'Maçã'
+        ListaFrutas[1] = 'Uva'
+        ListaFrutas[2] = 'Banana'
+        ListaFrutas[3] = 'Morango'
+
+        console.log(ListaFrutas.sort());
+        
+        
+        var ListaNumeros = [];
+
+        ListaNumeros[0] = '12'
+        ListaNumeros[1] = '40'
+        ListaNumeros[2] = '3'
+        ListaNumeros[3] = '7'
+        ListaNumeros[4] = '19'
+        ListaNumeros[5] = '1'
+
+        console.log(ListaNumeros.sort(ordenaNumeros));
+        
+        function ordenaNumeros(a, b){
+            return a - b
+            // <br 0 = a ordenado antes de b
+            // > 0 = b ordenado antes de a
+            // == a ordem é mantida
+        }
+
+        */
+
+    </script>
+</body>
+
+</html>

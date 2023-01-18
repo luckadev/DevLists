@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Carter+One&display=swap');
+/* 
+font-family: 'Archivo', sans-serif;
+font-family: 'Carter One', cursive;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo', sans-serif;
+}
+
+:root {
+    --color-red: #F03636;
+    --color-black-fundo: #1d1d1d;
+    --color-red-input: #FFC3C3;
+    --color-red-green: #86FA5E;
+    --color-red-yellow: #DDEB3F;
+    --color-red-red-btn: #AD3636;
+}
+
+body {
+    color: #fff;
+    background: linear-gradient(to bottom, #F03636 0%, #1D1D1D 100%);
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
+.divh3 h3{
+    text-align: center;
+    font-family: 'Carter One', cursive;
+    font-size: 50px;
+    margin-top: 80px;
+    font-weight: 400;
+}
+
+.text{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    max-width: 340px;
+}
+.text input{
+    Width: 340px;
+    height: 43px;
+    padding-left: 10px;
+    margin-bottom: 48px;
+    margin-top: 30px;
+    border-radius: 4px;
+    border: 3px solid var(--color-black-fundo);
+    background-color: #FFC3C3;
+    outline: none;
+    font-size: 27px;
+}
+.text input::placeholder{
+    color: #000;
+}
+.text button{
+    width: 90%;
+    max-width: 333px;
+    height: 63px;
+    border: none;
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-bottom: 23px;
+    font-size: 27px;
+    cursor: pointer;
+    transition: .5s;
+}
+.text button:hover{
+    filter:grayscale(40%);
+}
+.text #btnAdd{
+    background-color: var(--color-red-green);
+}
+.text #btnOrdenar{
+    background-color: var(--color-red-yellow);
+}
+.text #btnExcluir{
+    background-color: var(--color-red-red-btn);
+}
+.text a{
+    color: #fff;
+    opacity: 69%;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    transition: .3s;
+    margin-bottom: 20px;
+}
+.text a:hover{
+    opacity: 100%;
+}
+
+p{
+    text-align: center;
+    font-size: 17px;
+    padding: 3px;
+}
+.p1{
+    margin-top: 80px;
+}
+p a{
+    color: var(--color-red-yellow);
+    text-decoration: none;
+    transition: .2s;
+}
+p a:hover{
+    color: #fff;
+}
+
+#divLast{
+    position: relative;
+    bottom: 20px;
+}
+
+
+
+
+
+
+/* class js */
+.capitalized{
+    text-transform: capitalize;
+    padding-inline: 15px;
+    list-style-position: inside;
+}
+
+@media (max-width: 380px){
+    .text input{
+        width: 90%;
+        margin: 23px auto;
+    }
+}
+
+@media (min-height:730px){
+    .p2{
+        margin-bottom: 200px;
+    }
+}
