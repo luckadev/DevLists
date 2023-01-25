@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/0642c68ef3.js" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
     <title>DevList - To Do</title>
 </head>
@@ -18,14 +19,15 @@
 
     <div class="text">
         <input type="text" id="inputText" placeholder="Adicione Algo...">
-
-        <button id="btnAdd">Adicionar</button>
-        <button id="btnOrdenar">Ordenar</button>
-        <button id="btnExcluir">Excluir</button>
-        <a href="duvidas.html">o que é o DevLists?</a>
+        <div class="divBtnFlex">
+            <button id="btnAdd"><i class="fa-solid fa-plus fa-xl"></i></button>
+            <button id="btnOrdenar"><img src="./assets/SVGdevListIcon.svg" alt="SVG-ordenar"></button>
+            <button id="btnExcluir"><i class="fa-solid fa-xmark fa-xl"></i></button>
+        </div>
+        <a id="textA" href="duvidas.html">o que é o DevLists?</a>
 
         <ul id="Lista">
-
+            
         </ul>
 
     </div>
@@ -37,7 +39,6 @@
     <script>
 
         // << Usei um pouco de DOM e manipulação com Array. >>
-
 
         // *** ESTUDOS SOBRE ARRAY, IGNORE SE QUISER. ***
 

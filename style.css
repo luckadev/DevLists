@@ -12,17 +12,16 @@ font-family: 'Carter One', cursive;
 }
 
 :root {
-    --color-red: #F03636;
-    --color-black-fundo: #1d1d1d;
-    --color-red-input: #FFC3C3;
+    --color-black-fundo: #090909;
+    --color-red-blue: #466FFF;
     --color-red-green: #86FA5E;
     --color-red-yellow: #DDEB3F;
-    --color-red-red-btn: #AD3636;
+    --color-red-red-btn: #F03636;
 }
 
 body {
     color: #fff;
-    background: linear-gradient(to bottom, #F03636 0%, #1D1D1D 100%);
+    background: #090909;
     background-repeat: no-repeat;
     height: 100%;
 }
@@ -45,31 +44,37 @@ body {
     Width: 340px;
     height: 43px;
     padding-left: 10px;
-    margin-bottom: 48px;
     margin-top: 30px;
+    margin-bottom: 48px;
     border-radius: 4px;
-    border: 3px solid var(--color-black-fundo);
-    background-color: #FFC3C3;
+    border: 3px solid var(--color-red-blue);
+    color: var(--color-red-blue);
+    background-color: transparent;
     outline: none;
-    font-size: 27px;
+    font-size: 20px;
 }
 .text input::placeholder{
-    color: #000;
+    color: #d9d9d9 ;
+}
+.divBtnFlex{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 .text button{
-    width: 90%;
-    max-width: 333px;
-    height: 63px;
+    padding: 10px;
+    width: 60px;
+    height: 60px;
     border: none;
     border-radius: 8px;
-    margin: 0 auto;
     margin-bottom: 23px;
-    font-size: 27px;
+    text-align: center;
+    font-size: 20px;
     cursor: pointer;
     transition: .5s;
 }
 .text button:hover{
-    filter:grayscale(40%);
+    filter: saturate(150%);
 }
 .text #btnAdd{
     background-color: var(--color-red-green);
@@ -80,17 +85,16 @@ body {
 .text #btnExcluir{
     background-color: var(--color-red-red-btn);
 }
-.text a{
-    color: #fff;
-    opacity: 69%;
+.text #textA{
+    color: #535353;
     text-align: center;
     text-decoration: none;
     font-size: 17px;
     transition: .3s;
-    margin-bottom: 20px;
+    margin-bottom: 35px;
 }
-.text a:hover{
-    opacity: 100%;
+.text #textA:hover{
+    color: #686868;
 }
 
 p{
@@ -113,6 +117,8 @@ p a:hover{
 #divLast{
     position: relative;
     bottom: 20px;
+    font-size: 17px;
+    font-weight: 400;
 }
 
 
@@ -124,13 +130,28 @@ p a:hover{
 .capitalized{
     text-transform: capitalize;
     padding-inline: 15px;
+    padding-bottom: 15px;
+    line-height: 23px;
     list-style-position: inside;
 }
+.removerBtn{
+    margin-left: 15px;
+    color: #6986f0;
+    font-size: 15px;
+    cursor: pointer;
+}
+.removerBtn:hover{
+    filter: saturate(160%);
+}
+.remove{
+    display: none;
+}
+
 
 @media (max-width: 380px){
     .text input{
         width: 90%;
-        margin: 23px auto;
+        margin: 32px auto;
     }
 }
 
