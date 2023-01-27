@@ -30,7 +30,7 @@ body {
     text-align: center;
     font-family: 'Carter One', cursive;
     font-size: 50px;
-    margin-top: 80px;
+    margin-top: 40px;
     font-weight: 400;
 }
 
@@ -133,20 +133,12 @@ p a:hover{
     padding-bottom: 15px;
     line-height: 23px;
     list-style-position: inside;
-}
-.removerBtn{
-    margin-left: 15px;
-    color: #6986f0;
-    font-size: 15px;
     cursor: pointer;
 }
-.removerBtn:hover{
-    filter: saturate(160%);
+.itemFeito{
+    color: #F03636;
+    opacity: 80%;
 }
-.remove{
-    display: none;
-}
-
 
 @media (max-width: 380px){
     .text input{

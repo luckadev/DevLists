@@ -27,15 +27,12 @@ function adicionar() {
 
         li.innerText = `${Input}`;
 
+        
+        li.addEventListener('click', () => {
+            li.classList.toggle('itemFeito')
+        });
+
         UlList.append(li);
-
-        let removerBtn = document.createElement('a');
-        removerBtn.innerHTML = 'Remover';
-        removerBtn.classList.add('removerBtn');
-        //criar id randomico - 1, 2, 3, 4..
-        //pegar o id clicado e excluir.
-
-        li.append(removerBtn);
     }
 }
 
@@ -49,15 +46,13 @@ function ordenar() {
         li.classList.add('capitalized');
 
         li.innerHTML = `${element}`;
+        
+        li.addEventListener('click', () => {
+            li.classList.toggle('itemFeito')
+        });
+
         UlList.append(li);
-
-        let removerBtn = document.createElement('a');
-        removerBtn.innerHTML = 'Remover';
-        removerBtn.classList.add('removerBtn');
-
-        li.append(removerBtn);
     });
-
 
 }
 

@@ -1,14 +1,93 @@
-body{
-    height: 110vh;
+@import url('https://fonts.googleapis.com/css2?family=Archivo&family=Carter+One&display=swap');
+/* 
+font-family: 'Archivo', sans-serif;
+font-family: 'Carter One', cursive;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Archivo', sans-serif;
 }
+
+:root {
+    --color-black-fundo: #090909;
+    --color-red-blue: #466FFF;
+    --color-red-green: #86FA5E;
+    --color-red-yellow: #DDEB3F;
+    --color-red-red-btn: #F03636;
+}
+
+body {
+    color: #fff;
+    background: #090909;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+
 .divh3 h3{
-    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'Carter One', cursive;
+    font-size: 50px;
+    margin-top: 40px;
+    font-weight: 400;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-block: 30px;
+}
+button{
+    background-color: #A2B6FF;
+    font-size: 27px;
+    font-weight: 800;
+    border-radius: 4px;
+    padding: 8px 20px;
+    max-width: 340px;
+    width: 90%;
 }
 
+#back {
+    color: #090909;
+    background-color: #466FFF;
+    text-align: center;
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+
+#divLast{
+    position: relative;
+    bottom: 20px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+p{
+    text-align: center;
+    font-size: 17px;
+    padding: 3px;
+}
 .p1{
-    margin-top: 130px;
+    margin-top: 80px;
 }
-.p2{
-    margin-bottom: 20px;
+p a{
+    color: var(--color-red-yellow);
+    text-decoration: none;
+    transition: .2s;
 }
-
+p a:hover{
+    color: #fff;
+}
